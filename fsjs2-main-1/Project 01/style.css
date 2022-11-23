@@ -121,8 +121,10 @@ nav div img {
 }
 
 .banner-container img[alt="illustration"] {
-    height: 69vh;
-    width: 110vh;
+    height: 97vh;
+    width: 166vh;
+    /* width: auto; */
+    /* height: auto; */
     /* flex: 0;
 }
 /* div img {
