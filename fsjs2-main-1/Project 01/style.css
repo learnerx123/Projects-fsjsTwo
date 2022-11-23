@@ -1,2 +1,94 @@
 /* You can not modify anything in the HTML */
 /* You can only modify the CSS file */
+.flex {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    /* background-color: rgb(185, 30, 30); */
+    align-items: center;
+    height: 45px;
+    padding: 5px;
+    margin: 0 60px;
+}
+nav div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section[aria-label="navbar"] {
+    margin: 29px 0px 0px 0px;
+}
+.rowFlex {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: aqua;
+
+} 
+.grow-list {
+    width: 50%;
+}
+
+/* nav div ul, .list {
+    list-style-image: initial;
+    color: rgb(175, 237, 204);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: #af3180;
+} */
+
+.list {
+    list-style-image: initial;
+    color: rgb(175, 237, 204);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: #af3180;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    flex: 1;
+}
+
+button {
+    height: 41px;
+    width: 100px;
+    border: 2px solid rgb(102 103 193);
+    border-radius: 10px;
+    background: rgb(102 103 193);
+}
+
+/* .width50px {
+    width: 50%;
+
+} */
+
+/* .grow-list {
+    width: 50%;
+} */
+nav div img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 29px;
+    /* width: 62px;*/
+}
+
+.banner-container {
+    display: flex;
+    justify-content: flex-start;
+
+}
+/* div img {
+    height: 22px;
+
+} */
