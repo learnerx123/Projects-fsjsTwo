@@ -11,7 +11,7 @@ nav {
     align-items: center;
     height: 45px;
     padding: 5px;
-    margin: 0 60px;
+    margin: 0 100px;
 }
 nav div:first-child {
     display: flex;
@@ -49,7 +49,13 @@ section[aria-label="navbar"] {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    color: #af3180;
+    color: #c0c0c0;
+    color: #afacac;
+
+}
+.list li:first-child {
+    font-weight: 700;
+    color: #313131;
 }
 
 .button-group {
@@ -59,12 +65,22 @@ section[aria-label="navbar"] {
     flex: 1;
 }
 
-button {
+button.nav-button {
     height: 41px;
     width: 100px;
     border: 2px solid rgb(102 103 193);
     border-radius: 10px;
     background: rgb(102 103 193);
+    background-color: #5955b3;
+}
+.nav-button.btn {
+    margin: 90px 0x 0px 0px;
+    height: 50px;
+    width: 150px;
+    border: 2px solid rgb(102 103 193);
+    border-radius: 10px;
+    background: rgb(102 103 193);
+    background-color: #5955b3;
 }
 
 /* .width50px {
@@ -86,7 +102,28 @@ nav div img {
 .banner-container {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 
+}
+
+.banner-container {
+    margin: 50px 0px 0px 100px;
+}
+
+.banner-container h1 {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #3c2f60;
+    font-size: xx-large;
+}
+
+.banner-container h1 span {
+    color: rgb(102 103 193)
+}
+
+.banner-container img[alt="illustration"] {
+    height: 69vh;
+    width: 110vh;
+    /* flex: 0;
 }
 /* div img {
     height: 22px;
