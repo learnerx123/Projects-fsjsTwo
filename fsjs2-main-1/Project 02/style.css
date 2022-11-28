@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #ffffff;
+
 }
 
 body {
@@ -110,8 +112,8 @@ nav div img {
 
 
 button.button-small {
-    height: 24px;
-    width: 115px;
+    height: 26px;
+    width: 110px;
     border: none;
     border-radius: 5px;
     /* position: absolute;
@@ -128,8 +130,9 @@ button {
 }
 
 button.button-large {
-    height: 45px;
-    width: 115px;
+    height: 40px;
+    width: 30vh;
+    margin-top: 4vh;
 }
 /* button div */
 nav div:nth-child(4) {
@@ -165,5 +168,23 @@ nav div:nth-child(4) {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 30vw;
 }
 
+.hero h1 {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #e3dfee;
+    font-size: xx-large;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.hero p {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ffffff;
+    font-size: xx-large;
+    font-size: 18px;
+    font-weight: 400;
+}

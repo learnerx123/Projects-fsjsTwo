@@ -69,6 +69,7 @@ button.nav-button {
     height: 41px;
     width: 100px;
     border: 2px solid rgb(102 103 193);
+    border: none;
     border-radius: 10px;
     background: rgb(102 103 193);
     background-color: #5955b3;
@@ -125,9 +126,10 @@ nav div img {
     width: 166vh;
     /* width: auto; */
     /* height: auto; */
-    /* flex: 0;
+    /* flex: 0;*/
 }
-/* div img {
+
+ /*div img {
     height: 22px;
 
 } */
