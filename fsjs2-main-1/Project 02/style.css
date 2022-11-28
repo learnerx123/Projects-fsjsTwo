@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     color: #ffffff;
-
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
@@ -30,21 +30,22 @@ body {
     display: flex;
     list-style: none;
     justify-content: flex-start;
-    height: 50px;
+    height: 65px;
     align-items: center;
     background-color: black;
-    padding: 0px 35px;
+    padding: 0px 60px;
     /* margin: 0 100px; */
 }
 
 .grow-list {
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 40%;
     height: inherit;
     margin-left: 3%;
     /* flex: 1; */
     /* margin: 0% 0% 5; */
+    
 
 }
 
@@ -132,27 +133,43 @@ button {
 button.button-large {
     height: 40px;
     width: 30vh;
-    margin-top: 4vh;
+    /* margin-top: 4vh; */
+
+    height: 43px;
+    width: 45vh;
+    /* margin-top: 4vh; */
+    font-size: 22px;
+    font-weight: 500;
+    /* font-family: sans-serif;*/
 }
 /* button div */
 nav div:nth-child(4) {
     /* background-color: red; */
     height: auto;
     width: auto;
-    position: absolute;
+    /* position: absolute; */
     top: inherit;
     /* left: ; */
     right: 5%;
-    /* flex: 1; */
+    flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
 .hero {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70vw; */
+
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    width: 70vw;
+    padding-bottom: 54px;
 }
 
 [aria-label="hero"] {
@@ -163,20 +180,14 @@ nav div:nth-child(4) {
     height: 79vh;
 }
 
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 30vw;
-}
+
 
 .hero h1 {
     font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #e3dfee;
     font-size: xx-large;
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 76px;
+    /* font-weight: 700; */
     text-align: center;
 
 }
@@ -187,4 +198,31 @@ nav div:nth-child(4) {
     font-size: xx-large;
     font-size: 18px;
     font-weight: 400;
+    /* margin-bottom: 20vh; */
+
+}
+
+
+.hero p {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ffffff;
+    font-size: xx-large;
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 6vh;
+}
+
+[aria-label="hero"] {
+    box-sizing: border-box;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 68vh;
+}
+
+ul:first-child::before {
+    content: "";
+    height: 27px;
+    border-left: 0.01px solid white;
+    font-weight: 100;
 }
