@@ -61,10 +61,12 @@ body {
     flex: 1;
 }
 
+.list :nth-child(1) {
+    padding: 2px;
+}
 
-
-/* .list li::after {
-    content: "";
+.list :nth-child(1)::after {
+    /* content: "";
     margin: 2px;
     width: 1px;
     height: 1px;
@@ -73,9 +75,34 @@ body {
     display: inline-block;
     padding: 5px;
     transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); */
 
-}  */
+/* 
+    content: "";
+    margin: 2px;
+    width: 1px;
+    height: 1px;
+    border: solid rgb(243, 232, 232);
+    border-width: 0px 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); */
+
+    content: "";
+    margin: 2px;
+    width: 1px;
+    height: 1px;
+    border: solid rgb(243, 232, 232);
+    border-width: 0px 1.5px 1.5px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: relative;
+    right: -8px;
+
+} 
 
 /* .arrow {
     border: solid grey;
