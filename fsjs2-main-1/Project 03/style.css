@@ -1,2 +1,162 @@
 /* You can not modify anything from the HTML file */
 /* You can only modify the CSS file */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: #ffffff; */
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    /* overflow: hidden; */
+    /* font-family: poppins; */
+
+}
+
+
+nav.navbar-container {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    height: 65px;
+    align-items: center;
+
+    /* background-color: black; */
+    /* padding: 0px 60px; */
+    /* margin: 0 100px; */
+
+}
+
+
+
+
+body {
+    /* display: grid;
+    grid-template-columns: ;
+    grid-template-rows: 20px 56px 70vh; */
+
+}
+
+.list {
+    /* margin-left: 50%; */
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: inherit;
+    list-style: none;
+    justify-content: space-between;
+    /* margin-left: 3%; */
+    /* flex: 1; */
+    font-weight: 600;
+    font-size: 17px;
+}
+
+/* button-grp-div */
+nav.navbar-container .button-group {
+    display: flex;
+    /* margin-left: 50%; */
+    width: 14%;
+    align-items: center;
+    /* justify-content: space-between; */
+    row-gap: 20%;
+    gap: 10px;
+    margin-right: 2%;
+}
+
+/* button div inside nav */
+nav .button-group .search-icon+div {
+
+    width: auto;
+    /* display: flex; */
+    /* margin-left: 60%; */
+    /* place-content: center; */
+    /* color: rebeccapurple; */
+    /* background-color: rgb(173, 205, 98);*/
+}
+
+
+section[aria-label="navbar"] {
+    padding: 0% 6%;
+    padding-top: 3%;
+}
+
+/* ul */
+nav.navbar-container>div:nth-child(2) {
+    /* background-color: rgb(29, 205, 114); */
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron';
+}
+
+nav img {
+    width: 120px;
+    height: auto;
+    height: auto;
+    align-self: center;
+    vertical-align: middle;
+
+}
+
+.nav-button {
+    border-radius: 4px;
+    width: 80px;
+    height: 1000px;
+
+}
+
+/* button */
+.search-icon+div .nav-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130px;
+    height: 34px;
+    border-radius: 12px;
+    /* margin-left: 60%; */
+    /* color: rebeccapurple; */
+    background-color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    color: grey;
+    border: 2px solid black;
+    border: 2.5px solid black;
+    /* margin-left: 60%; */
+    /* color: rebeccapurple; */
+    /* background-color: red;*/
+
+}
+
+.nav-button::before {
+    content: " ";
+    height: 8px;
+    /* margin-top: 2px; */
+}
+
+
+.search-icon {
+    width: 21px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+.list>li:first-child {
+    /* text-decoration-line: underline; */
+    font-weight: 900;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list>li:first-child::after {
+    content: "";
+    width: 44px;
+    border-bottom: 2px solid black;   
+}
