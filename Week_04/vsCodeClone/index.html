@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>vs code clone- Educational purpose only</title>
 </head>
+
 <body>
-    
+    <!-- header nav container -->
+    <nav class="border-solid border-blue-400 border-2 bg-[#2c2c32]
+    ">
+        <!-- nav container -->
+        <div id="nav-container" class="flex space-x-7  items-center px-6 h-14">
+            <!-- vs icon name  -->
+            <div id="vsCode-icon-name" class="flex">
+                <a class="flex space-x-3 w-90 items-center" href="/">
+                    <img class="w-6 h-6" src="./assets/vsCodeIcon.png" alt="vsCode-icon-name">
+                    <span class="text-gray-50">Visual Studio Code</span></a>
+            </div>
+            <!-- list menu -->
+            <ul class="flex space-x-7 text-gray-300">
+                <li><a id="nav-docs" href="">Docs</a></li>
+                <li><a id="nav-updates" href="">Updates</a></li>
+                <li><a id="nav-blogs" href="">Blog</a></li>
+                <li><a id="nav-extend" href="">API</a></li>
+                <li><a href="https://marketplace.visualstudio.com/VSCode" target="_blank"
+                        id="nav-extensions">Extensions</a></li>
+                <li><a id="nav-faqs" href="">FAQ</a></li>
+                <li><a id="nav-learn" href="">Learn</a></li>
+                <li class="search visible-xs visible-sm"><a href="">Search</a></li>
+
+            </ul>
+            <div class="flex flex-1"></div>
+            <!-- search download -->
+            <ul class="flex justify-center items-center border-solid border-2  border-gray-600 space-x-5 h-full">
+                <li class=" justify-center items-center h-full">
+                    <form class="flex justify-center items-center space-x-2 bg-[#3d3d42] w-inherite h-full" action="">
+                        <!-- <div class="flex justify-center items-center bg-grey"> -->
+                            <img class="w-4 h-10 " src="./assets/icons/search.svg" alt="search-icon">
+                            <input class=" bg-[#3d3d42] text-slate-200 border-none" type="text" placeholder="Search Docs">
+                        <!-- </div> -->
+                    </form>
+
+                </li>
+                <li></li>
+
+            </ul>
+        </div>
+
+    </nav>
 </body>
+
 </html>
