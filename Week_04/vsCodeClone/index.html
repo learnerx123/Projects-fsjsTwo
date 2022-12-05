@@ -11,10 +11,10 @@
 
 <body>
     <!-- header nav container -->
-    <nav class="border-solid border-blue-400 border-2 bg-[#2c2c32]
+    <nav class="border-solid  bg-[#2c2c32]
     ">
         <!-- nav container -->
-        <div id="nav-container" class="flex space-x-7  items-center px-6 h-14">
+        <div id="nav-container" class="flex space-x-7  items-center px-6 h-12 mx-6">
             <!-- vs icon name  -->
             <div id="vsCode-icon-name" class="flex">
                 <a class="flex space-x-3 w-90 items-center" href="/">
@@ -34,19 +34,27 @@
                 <li class="search visible-xs visible-sm"><a href="">Search</a></li>
 
             </ul>
+            <!-- gap div -->
             <div class="flex flex-1"></div>
             <!-- search download -->
-            <ul class="flex justify-center items-center border-solid border-2  border-gray-600 space-x-5 h-full">
-                <li class=" justify-center items-center h-full">
-                    <form class="flex justify-center items-center space-x-2 bg-[#3d3d42] w-inherite h-full" action="">
-                        <!-- <div class="flex justify-center items-center bg-grey"> -->
-                            <img class="w-4 h-10 " src="./assets/icons/search.svg" alt="search-icon">
-                            <input class=" bg-[#3d3d42] text-slate-200 border-none" type="text" placeholder="Search Docs">
-                        <!-- </div> -->
-                    </form>
+            <ul class="flex justify-center items-center h-full border-none">
+                <li class="flex justify-center items-center h-full">
+                    <form class="flex justify-center items-center space-x-2 bg-[#3d3d42]  h-full " action="">
 
+                        <span class="ml-3">
+                            <img class="w-4 h-10 " src="./assets/icons/search.svg" alt="search-icon">
+                        </span>
+                        <input class=" bg-[#3d3d42] text-slate-200 border-none w-[140px] " style="outline: 1px solid rgba(255,255,255,.5);
+                        /* outline-offset: -1px; */
+                        box-shadow: none;" type="text" placeholder="Search Docs">
+                    </form>
                 </li>
-                <li></li>
+                <li class="flex justify-center items-center h-full  m-0">
+                    <button class="flex justify-center items-center space-x-2 w-32 h-full bg-[#0066b8] ">
+                            <img class="w-4 h-4" src="./assets/icons/download.svg" alt="download icon">
+                            <span class="font-semibold">download</span> 
+                    </button>
+                </li>
 
             </ul>
         </div>
