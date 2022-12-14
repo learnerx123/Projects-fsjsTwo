@@ -12,452 +12,503 @@
 
 <body class="text-[#444444]">
     <section id="page" class="">
-    <!-- disclaimer -->
-    <section id="disclaimer" class="hidden fixed bottom-0 left-0 right-0 w-full;">
-        <div class=" flex justify-center items-center text-gray-400 bg-gray-800  text-xs">
-            *Site developed for education purpose only.
-        </div>
-    </section>
+        <!-- disclaimer -->
+        <section id="disclaimer" class="hidden fixed bottom-0 left-0 right-0 w-full;">
+            <div class=" flex justify-center items-center text-gray-400 bg-gray-800  text-xs">
+                *Site developed for education purpose only.
+            </div>
+        </section>
 
-    <!-- header  -->
-    <nav class="border-solid fixed w-screen  bg-[#2c2c32] z-20
+        <!-- header  -->
+        <nav class="border-solid fixed w-screen  bg-[#2c2c32] z-20
     ">
-        <!-- nav container h-[54px] -->
-        <div id="nav-container" class="flex space-x-7  items-center px-20 mx-6 h-12">
-            <!-- vs icon name  -->
-            <div id="vsCode-icon-name" class="flex">
-                <a class="flex space-x-3 w-90 items-center" href="/">
-                    <img class="w-6 h-6" src="./assets/vsCodeIcon.png" alt="vsCode-icon-name">
-                    <span class="text-gray-50 text-lg font-">Visual Studio Code</span></a>
-            </div>
-            <!-- list menu -->
-            <ul class="flex space-x-4 text-[#9d9d9d]  font-sans text-white/60 font-normal text-sm">
-                <li class="hover:text-slate-200"><a id="nav-docs" href="">Docs</a></li>
-                <li class="hover:text-slate-200"><a id="nav-updates" href="">Updates</a></li>
-                <li class="hover:text-slate-200"><a id="nav-blogs" href="">Blog</a></li>
-                <li class="hover:text-slate-200"><a id="nav-extend" href="">API</a></li>
-                <li class="hover:text-slate-200"><a href="https://marketplace.visualstudio.com/VSCode" target="_blank"
-                        id="nav-extensions">Extensions</a></li>
-                <li class="hover:text-slate-200"><a id="nav-faqs" href="">FAQ</a></li>
-                <li class="hover:text-slate-200"><a id="nav-learn" href="">Learn</a></li>
-                <li class="hover:text-slate-200"><a href="">Search</a></li>
-            </ul>
-            <!-- gap div -->
-            <div class="flex flex-1"></div>
-            <!-- search download button-->
-            <ul class="flex justify-center items-center h-full border-none">
-                <li class="flex justify-center items-center h-full">
-                    <form class="flex justify-center items-center space-x-2 bg-[#3d3d42]  h-full " action="">
-                        <!-- search icon  -->
-                        <span class="ml-3">
-                            <img class="w-4 h-10 " src="./assets/icons/search.svg" alt="search-icon">
-                        </span>
-                        <!-- search input -->
-                        <input
-                            class=" bg-[#3d3d42] text-slate-200 border-none w-[140px] active:outline-none focus:outline-none placeholder:text-sm placeholder:text-slate-200 placeholder:font-light "
-                            type="text" placeholder="Search Docs">
-                    </form>
-                </li>
-                <!-- download button -->
-                <li class="flex justify-center items-center h-full  m-0">
-                    <button class="flex justify-center items-center space-x-2 w-32 h-full bg-[#0066b8] ">
-                        <img class="w-4 h-4" src="./assets/icons/download.svg" alt="download icon">
-                        <span class="font-semibold text-white">Download</span>
-                    </button>
-                </li>
-
-            </ul>
-        </div>
-
-    </nav>
-    <!-- space block p:fixed adjustment -->
-    <div class="h-12 bg-[#2c2c32] "></div>
-
-    <!-- version banner -->
-    <section aria-label="version-banner" class="">
-        <div class="flex justify-center items-center bg-[#25252b] text-gray-300 font-normal text-sm h-8">
-            <p>
-                <span class="text-blue-600 ">Version 1.73</span>
-                is now available! Read about the new features
-                and fixes from October.
-            </p>
-        </div>
-    </section>
-
-    <!-- code redefined section:1 -->
-    <section aria-label="codeDefinedSection">
-
-        <!-- main -->
-        <div class="flex justify-center items-center text-gray-400 bg-[#2c2c32] w-full h-screen">
-            <!-- left -->
-            <div class="flex flex-col items-center  gap-y-5 ml-32 -mt-24 w-1/2">
-                <div class="flex flex-col justify-center gap-2">
-                    <h1 class="flex flex-col justify-center items-center text-5xl text-white font-thin">
-                        Code editing.
-                        <span class="font-normal">Redefined.</span>
-                    </h1>
-                    <p class="text-white/60">Free. Built on open source. Runs everywhere.</p>
+            <!-- nav container h-[54px] -->
+            <div id="nav-container" class="flex space-x-7  items-center px-20 mx-6 h-12">
+                <!-- vs icon name  -->
+                <div id="vsCode-icon-name" class="flex">
+                    <a class="flex space-x-3 w-90 items-center" href="/">
+                        <img class="w-6 h-6" src="./assets/vsCodeIcon.png" alt="vsCode-icon-name">
+                        <span class="text-gray-50 text-lg font-">Visual Studio Code</span></a>
                 </div>
-
-                <!-- download for windows  section -->
-                <div class="flex flex-col items-center gap-5">
-                    <!-- button download for windows  -->
-                    <div class="flex gap-x-0.5">
-                        <button
-                            class="flex flex-col justify-center items-center space-x-2 w-52 h-16 bg-[#0066b8] text-white">
-                            <span class="font-semibold text-base">Download for Windows</span>
-                            <span class="font-normal text-xs">Stable Build</span>
-                        </button>
-                        <button class="flex  justify-center items-end space-x-2  bg-[#0066b8] text-white w-10 h-16     
-                        bg-[url('/assets/asset_27.svg')] bg-no-repeat bg-center bg-[length:12px_13px]"></button>
-                    </div>
-
-                    <p class="text-center text-sm bg-[#25252b] rounded-lg font-thin px-2 py-2 text-white/60">
-                        <a class="text-[#0098ff] " href="">Web</a>,
-                        <a class="text-[#0098ff] " href="">Insiders edition</a>, or
-                        <a class="text-[#0098ff] " href="">other platforms</a>
-                    </p>
-                    <!-- vsCode license and privacy -->
-                    <p class="flex flex-col items-center justify-center font-thin text-xs text-white/60">
-                        By using VS Code, you agree to its <span class="text-[#0098ff]">license and privacy
-                            statement.</span>
-                    </p>
-                </div>
-
-            </div>
-
-            <!-- right -->
-            <div class="flex  ">
-                <img class="h-auto w-[80%] ml-7" src="./assets/asset_28.png" alt="">
-            </div>
-
-        </div>
-    </section>
-
-    <!--  vsCode-property-icons -->
-    <section aria-label="sec-2 vsCode-property-icons ">
-        <div class="flex w-full h-28 justify-evenly items-center ">
-            <div id="intelli"
-                class="flex flex-col justify-center items-center gap-y-2 font-normal text-lg text-[#444444]">
-                <img class="w-auto h-[49px]" src="./assets/intelli-icon.PNG" alt="intelligence">
-                <!-- IntelliSense -->
-                <div>
-                    IntelliSense
-                </div>
-            </div>
-            <div id="Bug" class="flex flex-col justify-center items-center gap-y-2 font-norml text-lg text-[#444444] ">
-                <img class="w-auto h-12" src="./assets/Bug-iconPNG.PNG" alt="Bug-icon">
-                <div>
-                    Run and Debug
-                </div>
-            </div>
-            <div id="Branch-icon"
-                class="flex flex-col justify-center items-center gap-y-2 font-norml text-lg text-[#444444]">
-                <img class="w-auto h-12" src="./assets/Branch-icon.PNG" alt="branch_icon.svg">
-                <div>
-                    Built-in Git
-                </div>
-            </div>
-            <div id="extention-icon"
-                class="flex flex-col justify-center items-center gap-y-.5 font-normal text-lg text-[#444444]">
-                <img class="w-auto h-14" src="./assets/extention-icon.png" alt="Extension-icon.svg">
-                <div>
-                    Extensions
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- tweet section:3 -->
-    <section bg-[#f5f5f5]>
-        <div class="flex justify-center items-center w-full bg-[#f5f5f5] h-72 text-base font-normal px-[120px]">
-            <!-- tweet and arrow container -->
-            <div class="flex justify-between items-center w-full h-full">
-
-                <!-- arrow div Right-->
-                <div id="icon-left" class="">
-                    <i class="fa-sharp fa-solid fa-chevron-left"></i>
-                </div>
-                <!-- tweets container -->
-                <div class="flex items-center justify-between h-full w-full">
-                    <!-- tweet1 card-->
-                    <div id="1" class="flex items-center gap- w-[28%] h-[60%] bg-gay-300 relative pr-
-                    ">
-                        <!-- after:content-[url('/assets/twitter-icon.svg')] after:w-10 after:h-auto -->
-                        <!-- dp div -->
-                        <div class=" w-60 h-full mr-2">
-                            <img class="w-60 h-auto rounded-full" src="assets/asset 31.jpeg" alt="dp">
-                        </div>
-
-                        <!-- tweet -->
-                        <div class="flex flex-col justify-center h-full text-black  
-                        ">
-                            <!-- after:content-[url('/assets/twitter-icon.svg')] after:w-10 after:h-auto -->
-                            <div class=" after:content-[''])] after:w-12 after:h-auto ">
-                                <span class="text-sm  font-bold">Una Kravets</span>
-                                <span class="text-xs font-normal text-[#6e6e6e]">@Una</span>
-                            </div>
-
-                            <!-- tweet text -->
-                            <div class="">
-                                VS @code does so many things right. I’m constantly impressed by the UX, and customizing
-                                workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️
-                            </div>
-                        </div>
-                        <!-- twitter -->
-                        <div class=" h-fit mt- opacity-20 absolute right-2 z-10 top-1">
-                            <!-- <i class="w-20 h-auto z-10 absolute right-0 top-2 opacity-50 rounded-lg -mr-7" src="./assets/twitter-icon.svg" alt=""> -->
-                            <i class="fa-brands fa-twitter "></i>
-                        </div>
-
-                    </div>
-
-                    <!-- tweet2 card-->
-                    <div id="1" class="flex items-center gap- w-[28%] h-[60%] bg-gay-300 relative pr-
-                    ">
-                        <!-- after:content-[url('/assets/twitter-icon.svg')] after:w-10 after:h-auto -->
-                        <!-- dp div -->
-                        <div class=" w-60 h-full mr-2">
-                            <img class="w-60 h-auto rounded-full" src="assets/asset 32.jpeg" alt="dp">
-                        </div>
-
-                        <!-- tweet -->
-                        <div class="flex flex-col justify-center h-full text-black  
-       ">
-                            <!-- after:content-[url('/assets/twitter-icon.svg')] after:w-10 after:h-auto -->
-                            <div class=" after:content-[''])] after:w-12 after:h-auto ">
-                                <span class="text-sm  font-bold">Jonathan Dunlap</span>
-                                <span class="text-xs font-normal text-[#6e6e6e]">@jadbox</span>
-                            </div>
-
-                            <!-- tweet text -->
-                            <div class="">
-                                VS Code will have deep remote development. You can connect to a container running a
-                                different OS and use any VS Code plugins, linting, debugging for that environment.
-                                🔥🔥🔥
-                            </div>
-                        </div>
-                        <!-- twitter -->
-                        <div class=" h-fit mt- opacity-20 absolute right-2  -top-2">
-                            <!-- <i class="w-20 h-auto z-10 absolute right-0 top-2 opacity-50 rounded-lg -mr-7" src="./assets/twitter-icon.svg" alt=""> -->
-                            <i class="fa-brands fa-twitter "></i>
-                        </div>
-
-                    </div>
-
-                    <!-- tweet3 card-->
-                    <div id="1" class="flex items-center gap- w-[28%] h-[60%] bg-gay-300 relative pr-
-      ">
-                        <!-- after:content-[url('/assets/twitter-icon.svg')] after:w-10 after:h-auto -->
-                        <!-- dp div -->
-                        <div class=" w-60 h-full mr-2">
-                            <img class="w-60 h-auto rounded-full" src="assets/asset 33.jpeg" alt="dp">
-                        </div>
-
-                        <!-- tweet -->
-                        <div class="flex flex-col justify-center h-full text-black  
-                        ">
-                            <!-- after:content-[url('/assets/twitter-icon.svg')] after:w-10 after:h-auto -->
-                            <div class=" after:content-[''])] after:w-12 after:h-auto ">
-                                <span class="text-sm  font-bold">Pavithra Kodmad</span>
-                                <span class="text-xs font-normal text-[#6e6e6e]">@PKodmad</span>
-                            </div>
-
-                            <!-- tweet text -->
-                            <div class="">
-                                VS Code is my most used and favorite editor. I love being able to customize the editor -
-                                changing the layout, the icons, fonts and color scheme is so easy!
-                            </div>
-                        </div>
-                        <!-- twitter -->
-                        <div class=" h-fit mt- opacity-20 absolute right-2 z-10 top-1">
-                            <!-- <i class="w-20 h-auto z-10 absolute right-0 top-2 opacity-50 rounded-lg -mr-7" src="./assets/twitter-icon.svg" alt=""> -->
-                            <i class="fa-brands fa-twitter "></i>
-                        </div>
-
-                    </div>
-
-                    <!-- tweet2 -->
-                    <div id="2" class=""></div>
-
-                    <!-- tweet3 -->
-                    <div id="3"></div>
-                </div>
-
-                <!-- arrow div Right -->
-                <div id="icon-right">
-                    <i class="fa-sharp fa-solid fa-chevron-right"></i>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!-- section:4 Meet Intelligence -->
-    <section>
-        <div class="flex  pl-28 items-center w-full h-[375px]  mt-1 bg--100">
-            <!-- row block -->
-            <div class="flex space-x-32 mt-5">
-                <div class="flex justify-center items-center w-[28%]  h-auto ">
-                    <img class="flex  justify-center items-center " src="./assets/asset 7.svg" alt="">
-                </div>
-                <div
-                    class=" flex flex-col justify-start items-start w-[59%] h-[66%] leading-[40px] space-y-5 pr-32 mr-12">
-                    <div class="text-[27px] font-extralight font-sans">Meet IntelliSense.</div>
-                    <p>Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart
-                        completions based on variable types, function definitions, and imported modules.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- section:5 Print statement debugging is a thing of the past. -->
-    <section>
-        <div class="flex  pl-28 items-center w-full h-[375px]  mt-1 bg-[#f5f5f5]">
-            <!-- row block -->
-            <div class="flex space-x-20 mt-5">
-
-                <div
-                    class=" flex flex-col justify-start items-start w-[50%] h-[66%] leading-[40px] space-y-5 pr-4 mr-12  ">
-                    <div class="text-[27px] font-extralight font-sans">Print statement debugging is a thing of the past.
-                    </div>
-                    <p>Debug code right from the editor. Launch or attach to your running apps and debug with break
-                        points, call stacks, and an interactive console.</p>
-                </div>
-
-                <div class="flex justify-center items-center w-[28%]  h-auto">
-                    <img class="flex  justify-center items-center " src="./assets/asset 8.svg" alt="">
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- section:6 Git command -->
-    <section>
-        <div class="flex  pl-28 items-center w-full h-[375px]  mt-1 bg--100">
-            <!-- row block -->
-            <div class="flex space-x-32 mt-5">
-                <div class="flex justify-center items-center w-[28%]  h-auto ">
-                    <img class="flex  justify-center items-center " src="./assets/asset 9.svg" alt="">
-                </div>
-                <div
-                    class=" flex flex-col justify-start items-start w-[59%] h-[66%] leading-[40px] space-y-5 pr-32 mr-12">
-                    <div class="text-[27px] font-extralight font-sans">Git commands built-in.</div>
-                    <p>
-                        Working with Git and other SCM providers has never been easier. Review diffs, stage files, and
-                        make commits right from the editor. Push and pull from any hosted SCM service.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- section:7 Extensible and customizable. -->
-    <section>
-        <div class="flex  pl-28 items-center w-full h-[375px]  mt-1 bg-[#f5f5f5]">
-            <!-- row block -->
-            <div class="flex space-x-20 mt-5">
-
-                <div
-                    class=" flex flex-col justify-start items-start w-[50%] h-[66%] leading-[40px] space-y-5 pr-4 mr-12  ">
-                    <div class="text-[27px] font-extralight font-sans">Extensible and customizable.</div>
-                    <p>Want even more features? Install extensions to add new languages, themes, debuggers, and to
-                        connect to additional services. Extensions run in separate processes, ensuring they won't slow
-                        down your editor.
-                        <a class="text-[#0066b8]" href="">Learn more about extensions.</a>
-                    </p>
-                </div>
-
-                <div class="flex justify-center items-center w-[28%]  h-auto">
-                    <img class="flex  justify-center items-center " src="./assets/asset 10.png" alt="">
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- section:8 Deploy with confidence and ease -->
-    <section>
-        <div class="flex  pl-28 items-center w-full h-[375px]  mt-1 bg--100">
-            <!-- row block -->
-            <div class="flex space-x-32 mt-5">
-                <div class="flex justify-center items-center w-[28%]  h-auto ">
-                    <img class="flex  justify-center items-center " src="./assets/asset 11.svg" alt="">
-                </div>
-                <div
-                    class=" flex flex-col justify-start items-start w-[59%] h-[66%] leading-[40px] space-y-5 pr-32 mr-12">
-                    <div class="text-[27px] font-extralight font-sans">Deploy with confidence and ease</div>
-                    <p>
-                        With <a class="text-[#0066b8]" href="">Microsoft</a> Azure you can deploy and host your React,
-                        Angular, Vue, Node, Python (and more!) sites, store and query relational and document based
-                        data, and scale with serverless computing, all with ease, <a class="text-[#0066b8]" href="">all
-                            from within VS Code</a>.
-                    <p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- section:9 VS Code for -->
-    <section class="bg-[#f5f5f5]">
-        <div class="flex flex-col justify-center items-center space-y-10 h-96">
-            <div class="text-3xl font-thin">VS Code for</div>
-            <div class="space-y-4">
-                <ul class="grid grid-cols-6 gap-x-6 gap-y-4 text-[17px] font-sans">
-                    <li><img class=" inline-block
-                     px-" src="assets/asset 12.svg" alt=""> <span>javaScript</span>
+                <!-- list menu -->
+                <ul class="flex space-x-4 text-[#9d9d9d]  font-sans text-white/60 font-normal text-sm">
+                    <li class="hover:text-slate-200"><a id="nav-docs" href="">Docs</a></li>
+                    <li class="hover:text-slate-200"><a id="nav-updates" href="">Updates</a></li>
+                    <li class="hover:text-slate-200"><a id="nav-blogs" href="">Blog</a></li>
+                    <li class="hover:text-slate-200"><a id="nav-extend" href="">API</a></li>
+                    <li class="hover:text-slate-200"><a href="https://marketplace.visualstudio.com/VSCode"
+                            target="_blank" id="nav-extensions">Extensions</a></li>
+                    <li class="hover:text-slate-200"><a id="nav-faqs" href="">FAQ</a></li>
+                    <li class="hover:text-slate-200"><a id="nav-learn" href="">Learn</a></li>
+                    <li class="hover:text-slate-200"><a href="">Search</a></li>
+                </ul>
+                <!-- gap div -->
+                <div class="flex flex-1"></div>
+                <!-- search download button-->
+                <ul class="flex justify-center items-center h-full border-none">
+                    <li class="flex justify-center items-center h-full">
+                        <form class="flex justify-center items-center space-x-2 bg-[#3d3d42]  h-full " action="">
+                            <!-- search icon  -->
+                            <span class="ml-3">
+                                <img class="w-4 h-10 " src="./assets/icons/search.svg" alt="search-icon">
+                            </span>
+                            <!-- search input -->
+                            <input
+                                class=" bg-[#3d3d42] text-slate-200 border-none w-[140px] active:outline-none focus:outline-none placeholder:text-sm placeholder:text-slate-200 placeholder:font-light "
+                                type="text" placeholder="Search Docs">
+                        </form>
                     </li>
-                    <li><img class=" inline-block
-                     px-" src="assets/asset 13.svg" alt=""> <span>Python</span></li>
-                    <li><img class=" inline-block
-                     px-" src="assets/asset 14.svg" alt=""> <span>java</span></li>
-                    <li><img class=" inline-block
-                     px-" src="assets/asset 15.svg" alt=""> <span>Markdown</span></li>
-                    <li><img class=" inline-block
-                     px-" src="assets/asset 16.svg" alt=""> <span>TypeScript</span></li>
-                    <li><img class=" inline-block
-                     px-" src="assets/asset 17.svg" alt=""> <span>C/C++</span></li>
-                    <li><img class=" inline-block
-                     px-" src="assets/asset 18.svg" alt=""> <span>JSON</span></li>
-                    <li><img class=" inline-block
-                     px-" src="assets/asset 19.svg" alt=""> <span>Powershell</span></li>
-                    <li><img class=" inline-block
-                     px-" src="assets/asset 20.svg" alt=""> <span>HTML/CSS</span></li>
-                    <li><img class=" inline-block
-                     px-" src="assets/asset 21.svg" alt=""> <span>C#</span></li>
-                    <li><img class=" inline-block
-                     px-" src="assets/asset 22.svg" alt=""> <span>PHP</span></li>
-                    <li><img class=" inline-block
-                     px-" src="assets/asset 23.svg" alt=""> <span>YAML</span></li>
+                    <!-- download button -->
+                    <li class="flex justify-center items-center h-full  m-0">
+                        <button class="flex justify-center items-center space-x-2 w-32 h-full bg-[#0066b8] ">
+                            <img class="w-4 h-4" src="./assets/icons/download.svg" alt="download icon">
+                            <span class="font-semibold text-white">Download</span>
+                        </button>
+                    </li>
 
                 </ul>
-                <div class="text-center text-[#0066b8]">and many more languages on the Marketplace...</div>
             </div>
 
-            <button class="px-8 p-3 bg-[#0066b8] text-white font-medium text-lg text-center">Get Started Now</button>
-        </div>
+        </nav>
+        <!-- space block p:fixed adjustment -->
+        <div class="h-12 bg-[#2c2c32] "></div>
 
-    </section>
+        <!-- version banner -->
+        <section aria-label="version-banner" class="">
+            <div class="flex justify-center items-center bg-[#25252b] text-gray-300 font-normal text-sm h-8">
+                <p>
+                    <span class="text-blue-600 ">Version 1.73</span>
+                    is now available! Read about the new features
+                    and fixes from October.
+                </p>
+            </div>
+        </section>
 
-    <!-- section:10 Win Linux  Mac download -->
-    <section class="bg-slate-400">
-        <div class="h-96">
-            <div class="w-1/3">
-                <div><img class="w-16" src="assets/asset 37.png" alt=""></div>
+        <!-- code redefined section:1 -->
+        <section aria-label="codeDefinedSection">
+
+            <!-- main -->
+            <div class="flex justify-center items-center text-gray-400 bg-[#2c2c32] w-full h-screen">
+                <!-- left -->
+                <div class="flex flex-col items-center  gap-y-5 ml-32 -mt-24 w-1/2">
+                    <div class="flex flex-col justify-center gap-2">
+                        <h1 class="flex flex-col justify-center items-center text-5xl text-white font-thin">
+                            Code editing.
+                            <span class="font-normal">Redefined.</span>
+                        </h1>
+                        <p class="text-white/60">Free. Built on open source. Runs everywhere.</p>
+                    </div>
+
+                    <!-- download for windows  section -->
+                    <div class="flex flex-col items-center gap-5">
+                        <!-- button download for windows  -->
+                        <div class="flex gap-x-0.5">
+                            <button
+                                class="flex flex-col justify-center items-center space-x-2 w-52 h-16 bg-[#0066b8] text-white">
+                                <span class="font-semibold text-base">Download for Windows</span>
+                                <span class="font-normal text-xs">Stable Build</span>
+                            </button>
+                            <button class="flex  justify-center items-end space-x-2  bg-[#0066b8] text-white w-10 h-16     
+                        bg-[url('/assets/asset_27.svg')] bg-no-repeat bg-center bg-[length:12px_13px]"></button>
+                        </div>
+
+                        <p class="text-center text-sm bg-[#25252b] rounded-lg font-thin px-2 py-2 text-white/60">
+                            <a class="text-[#0098ff] " href="">Web</a>,
+                            <a class="text-[#0098ff] " href="">Insiders edition</a>, or
+                            <a class="text-[#0098ff] " href="">other platforms</a>
+                        </p>
+                        <!-- vsCode license and privacy -->
+                        <p class="flex flex-col items-center justify-center font-thin text-xs text-white/60">
+                            By using VS Code, you agree to its <span class="text-[#0098ff]">license and privacy
+                                statement.</span>
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- right -->
+                <div class="flex  ">
+                    <img class="h-auto w-[80%] ml-7" src="./assets/asset_28.png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <!--  vsCode-property-icons -->
+        <section aria-label="sec-2 vsCode-property-icons ">
+            <div class="flex w-full h-28 justify-evenly items-center ">
+                <div id="intelli"
+                    class="flex flex-col justify-center items-center gap-y-2 font-normal text-lg text-[#444444]">
+                    <img class="w-auto h-[49px]" src="./assets/intelli-icon.PNG" alt="intelligence">
+                    <!-- IntelliSense -->
+                    <div>
+                        IntelliSense
+                    </div>
+                </div>
+                <div id="Bug"
+                    class="flex flex-col justify-center items-center gap-y-2 font-norml text-lg text-[#444444] ">
+                    <img class="w-auto h-12" src="./assets/Bug-iconPNG.PNG" alt="Bug-icon">
+                    <div>
+                        Run and Debug
+                    </div>
+                </div>
+                <div id="Branch-icon"
+                    class="flex flex-col justify-center items-center gap-y-2 font-norml text-lg text-[#444444]">
+                    <img class="w-auto h-12" src="./assets/Branch-icon.PNG" alt="branch_icon.svg">
+                    <div>
+                        Built-in Git
+                    </div>
+                </div>
+                <div id="extention-icon"
+                    class="flex flex-col justify-center items-center gap-y-.5 font-normal text-lg text-[#444444]">
+                    <img class="w-auto h-14" src="./assets/extention-icon.png" alt="Extension-icon.svg">
+                    <div>
+                        Extensions
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- tweet section:3 -->
+        <section bg-[#f5f5f5]>
+            <div class="flex justify-center items-center w-full bg-[#f5f5f5] h-72 text-base font-normal px-[120px]">
+                <!-- tweet and arrow container -->
+                <div class="flex justify-between items-center w-full h-full">
+
+                    <!-- arrow div Right-->
+                    <div id="icon-left" class="">
+                        <i class="fa-sharp fa-solid fa-chevron-left"></i>
+                    </div>
+                    <!-- tweets container -->
+                    <div class="flex items-center justify-between h-full w-full">
+                        <!-- tweet1 card-->
+                        <div id="1" class="flex items-center gap- w-[28%] h-[60%] bg-gay-300 relative pr-
+                    ">
+                            <!-- after:content-[url('/assets/twitter-icon.svg')] after:w-10 after:h-auto -->
+                            <!-- dp div -->
+                            <div class=" w-60 h-full mr-2">
+                                <img class="w-60 h-auto rounded-full" src="assets/asset 31.jpeg" alt="dp">
+                            </div>
+
+                            <!-- tweet -->
+                            <div class="flex flex-col justify-center h-full text-black  
+                        ">
+                                <!-- after:content-[url('/assets/twitter-icon.svg')] after:w-10 after:h-auto -->
+                                <div class=" after:content-[''])] after:w-12 after:h-auto ">
+                                    <span class="text-sm  font-bold">Una Kravets</span>
+                                    <span class="text-xs font-normal text-[#6e6e6e]">@Una</span>
+                                </div>
+
+                                <!-- tweet text -->
+                                <div class="">
+                                    VS @code does so many things right. I’m constantly impressed by the UX, and
+                                    customizing
+                                    workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️
+                                </div>
+                            </div>
+                            <!-- twitter -->
+                            <div class=" h-fit mt- opacity-20 absolute right-2 z-10 top-1">
+                                <!-- <i class="w-20 h-auto z-10 absolute right-0 top-2 opacity-50 rounded-lg -mr-7" src="./assets/twitter-icon.svg" alt=""> -->
+                                <i class="fa-brands fa-twitter "></i>
+                            </div>
+
+                        </div>
+
+                        <!-- tweet2 card-->
+                        <div id="1" class="flex items-center gap- w-[28%] h-[60%] bg-gay-300 relative pr-
+                    ">
+                            <!-- after:content-[url('/assets/twitter-icon.svg')] after:w-10 after:h-auto -->
+                            <!-- dp div -->
+                            <div class=" w-60 h-full mr-2">
+                                <img class="w-60 h-auto rounded-full" src="assets/asset 32.jpeg" alt="dp">
+                            </div>
+
+                            <!-- tweet -->
+                            <div class="flex flex-col justify-center h-full text-black  
+       ">
+                                <!-- after:content-[url('/assets/twitter-icon.svg')] after:w-10 after:h-auto -->
+                                <div class=" after:content-[''])] after:w-12 after:h-auto ">
+                                    <span class="text-sm  font-bold">Jonathan Dunlap</span>
+                                    <span class="text-xs font-normal text-[#6e6e6e]">@jadbox</span>
+                                </div>
+
+                                <!-- tweet text -->
+                                <div class="">
+                                    VS Code will have deep remote development. You can connect to a container running a
+                                    different OS and use any VS Code plugins, linting, debugging for that environment.
+                                    🔥🔥🔥
+                                </div>
+                            </div>
+                            <!-- twitter -->
+                            <div class=" h-fit mt- opacity-20 absolute right-2  -top-2">
+                                <!-- <i class="w-20 h-auto z-10 absolute right-0 top-2 opacity-50 rounded-lg -mr-7" src="./assets/twitter-icon.svg" alt=""> -->
+                                <i class="fa-brands fa-twitter "></i>
+                            </div>
+
+                        </div>
+
+                        <!-- tweet3 card-->
+                        <div id="1" class="flex items-center gap- w-[28%] h-[60%] bg-gay-300 relative pr-
+      ">
+                            <!-- after:content-[url('/assets/twitter-icon.svg')] after:w-10 after:h-auto -->
+                            <!-- dp div -->
+                            <div class=" w-60 h-full mr-2">
+                                <img class="w-60 h-auto rounded-full" src="assets/asset 33.jpeg" alt="dp">
+                            </div>
+
+                            <!-- tweet -->
+                            <div class="flex flex-col justify-center h-full text-black  
+                        ">
+                                <!-- after:content-[url('/assets/twitter-icon.svg')] after:w-10 after:h-auto -->
+                                <div class=" after:content-[''])] after:w-12 after:h-auto ">
+                                    <span class="text-sm  font-bold">Pavithra Kodmad</span>
+                                    <span class="text-xs font-normal text-[#6e6e6e]">@PKodmad</span>
+                                </div>
+
+                                <!-- tweet text -->
+                                <div class="">
+                                    VS Code is my most used and favorite editor. I love being able to customize the
+                                    editor -
+                                    changing the layout, the icons, fonts and color scheme is so easy!
+                                </div>
+                            </div>
+                            <!-- twitter -->
+                            <div class=" h-fit mt- opacity-20 absolute right-2 z-10 top-1">
+                                <!-- <i class="w-20 h-auto z-10 absolute right-0 top-2 opacity-50 rounded-lg -mr-7" src="./assets/twitter-icon.svg" alt=""> -->
+                                <i class="fa-brands fa-twitter "></i>
+                            </div>
+
+                        </div>
+
+                        <!-- tweet2 -->
+                        <div id="2" class=""></div>
+
+                        <!-- tweet3 -->
+                        <div id="3"></div>
+                    </div>
+
+                    <!-- arrow div Right -->
+                    <div id="icon-right">
+                        <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- section:4 Meet Intelligence -->
+        <section>
+            <div class="flex  pl-28 items-center w-full h-[375px]  mt-1 bg--100">
+                <!-- row block -->
+                <div class="flex space-x-32 mt-5">
+                    <div class="flex justify-center items-center w-[28%]  h-auto ">
+                        <img class="flex  justify-center items-center " src="./assets/asset 7.svg" alt="">
+                    </div>
+                    <div
+                        class=" flex flex-col justify-start items-start w-[59%] h-[66%] leading-[40px] space-y-5 pr-32 mr-12">
+                        <div class="text-[27px] font-extralight font-sans">Meet IntelliSense.</div>
+                        <p>Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart
+                            completions based on variable types, function definitions, and imported modules.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- section:5 Print statement debugging is a thing of the past. -->
+        <section>
+            <div class="flex  pl-28 items-center w-full h-[375px]  mt-1 bg-[#f5f5f5]">
+                <!-- row block -->
+                <div class="flex space-x-20 mt-5">
+
+                    <div
+                        class=" flex flex-col justify-start items-start w-[50%] h-[66%] leading-[40px] space-y-5 pr-4 mr-12  ">
+                        <div class="text-[27px] font-extralight font-sans">Print statement debugging is a thing of the
+                            past.
+                        </div>
+                        <p>Debug code right from the editor. Launch or attach to your running apps and debug with break
+                            points, call stacks, and an interactive console.</p>
+                    </div>
+
+                    <div class="flex justify-center items-center w-[28%]  h-auto">
+                        <img class="flex  justify-center items-center " src="./assets/asset 8.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- section:6 Git command -->
+        <section>
+            <div class="flex  pl-28 items-center w-full h-[375px]  mt-1 bg--100">
+                <!-- row block -->
+                <div class="flex space-x-32 mt-5">
+                    <div class="flex justify-center items-center w-[28%]  h-auto ">
+                        <img class="flex  justify-center items-center " src="./assets/asset 9.svg" alt="">
+                    </div>
+                    <div
+                        class=" flex flex-col justify-start items-start w-[59%] h-[66%] leading-[40px] space-y-5 pr-32 mr-12">
+                        <div class="text-[27px] font-extralight font-sans">Git commands built-in.</div>
+                        <p>
+                            Working with Git and other SCM providers has never been easier. Review diffs, stage files,
+                            and
+                            make commits right from the editor. Push and pull from any hosted SCM service.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- section:7 Extensible and customizable. -->
+        <section>
+            <div class="flex  pl-28 items-center w-full h-[375px]  mt-1 bg-[#f5f5f5]">
+                <!-- row block -->
+                <div class="flex space-x-20 mt-5">
+
+                    <div
+                        class=" flex flex-col justify-start items-start w-[50%] h-[66%] leading-[40px] space-y-5 pr-4 mr-12  ">
+                        <div class="text-[27px] font-extralight font-sans">Extensible and customizable.</div>
+                        <p>Want even more features? Install extensions to add new languages, themes, debuggers, and to
+                            connect to additional services. Extensions run in separate processes, ensuring they won't
+                            slow
+                            down your editor.
+                            <a class="text-[#0066b8]" href="">Learn more about extensions.</a>
+                        </p>
+                    </div>
+
+                    <div class="flex justify-center items-center w-[28%]  h-auto">
+                        <img class="flex  justify-center items-center " src="./assets/asset 10.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- section:8 Deploy with confidence and ease -->
+        <section>
+            <div class="flex  pl-28 items-center w-full h-[375px]  mt-1 bg--100">
+                <!-- row block -->
+                <div class="flex space-x-32 mt-5">
+                    <div class="flex justify-center items-center w-[28%]  h-auto ">
+                        <img class="flex  justify-center items-center " src="./assets/asset 11.svg" alt="">
+                    </div>
+                    <div
+                        class=" flex flex-col justify-start items-start w-[59%] h-[66%] leading-[40px] space-y-5 pr-32 mr-12">
+                        <div class="text-[27px] font-extralight font-sans">Deploy with confidence and ease</div>
+                        <p>
+                            With <a class="text-[#0066b8]" href="">Microsoft</a> Azure you can deploy and host your
+                            React,
+                            Angular, Vue, Node, Python (and more!) sites, store and query relational and document based
+                            data, and scale with serverless computing, all with ease, <a class="text-[#0066b8]"
+                                href="">all
+                                from within VS Code</a>.
+                        <p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- section:9 VS Code for -->
+        <section class="bg-[#f5f5f5]">
+            <div class="flex flex-col justify-center items-center space-y-10 h-96">
+                <div class="text-3xl font-thin">VS Code for</div>
+                <div class="space-y-4">
+                    <ul class="grid grid-cols-6 gap-x-6 gap-y-4 text-[17px] font-sans">
+                        <li><img class=" inline-block
+                     px-" src="assets/asset 12.svg" alt=""> <span>javaScript</span>
+                        </li>
+                        <li><img class=" inline-block
+                     px-" src="assets/asset 13.svg" alt=""> <span>Python</span></li>
+                        <li><img class=" inline-block
+                     px-" src="assets/asset 14.svg" alt=""> <span>java</span></li>
+                        <li><img class=" inline-block
+                     px-" src="assets/asset 15.svg" alt=""> <span>Markdown</span></li>
+                        <li><img class=" inline-block
+                     px-" src="assets/asset 16.svg" alt=""> <span>TypeScript</span></li>
+                        <li><img class=" inline-block
+                     px-" src="assets/asset 17.svg" alt=""> <span>C/C++</span></li>
+                        <li><img class=" inline-block
+                     px-" src="assets/asset 18.svg" alt=""> <span>JSON</span></li>
+                        <li><img class=" inline-block
+                     px-" src="assets/asset 19.svg" alt=""> <span>Powershell</span></li>
+                        <li><img class=" inline-block
+                     px-" src="assets/asset 20.svg" alt=""> <span>HTML/CSS</span></li>
+                        <li><img class=" inline-block
+                     px-" src="assets/asset 21.svg" alt=""> <span>C#</span></li>
+                        <li><img class=" inline-block
+                     px-" src="assets/asset 22.svg" alt=""> <span>PHP</span></li>
+                        <li><img class=" inline-block
+                     px-" src="assets/asset 23.svg" alt=""> <span>YAML</span></li>
+
+                    </ul>
+                    <div class="text-center text-[#0066b8]">and many more languages on the Marketplace...</div>
+                </div>
+
+                <button class="px-8 p-3 bg-[#0066b8] text-white font-medium text-lg text-center">Get Started
+                    Now</button>
+            </div>
+
+        </section>
+
+        <!-- section:10 Win Linux  Mac download -->
+        <!-- flex justify-center -->
+        <section class="bg-slate-200 px-36  ">
+            <div class="h-96  grid grid-cols-3 place-content-center place-items-center justify-items-center ">
+                <div class="space-y-4 ">
+                    <div class=" flex place-content-center">
+                        <img class="w-24" src="assets/asset 37.png" alt="">
+                    </div>
+                    <div>
+
+                        <button class="flex flex-col items-center justify-center bg-[#0066b8] px-14 py-2 space-y-2">
+                            <div class="flex justify-center items-center gap-3">
+                                <img class="w-4 h-4" src="./assets/icons/download.svg" alt="download icon">
+                                <span class="font-semibold text-white">Windows</span>
+                            </div>
+                            <div class=" text-[10px] text-white text-opacity-90 font-medium">
+                                windows 8, 10, 11
+                            </div>
+                        </button>
+                    </div>
+                    <!-- 112px_1fr_1fr_1fr -->
+                    <div
+                        class="grid grid-cols-[110px_22px_22px_37px] gap-[1px] place-items-center place-content-center font-normal text-[10px] w-52 ">
+
+                        <div class="px-0.5 text-sm font-medium rounded-sm  text-black text-opacity-70 text-center">User
+                            Installer</div>
+                        <div class="px-0.5 rounded-sm bg-[#0066b8] text-white text-opacity-">x64</div>
+                        <div class="px-0.5 rounded-sm bg-[#0066b8] text-white text-opacity-">x86</div>
+                        <div class="px-0.5 rounded-sm bg-[#0066b8] text-white text-opacity-">Arm64</div>
+
+                        <div class="px-0.5 text-sm font-medium rounded-sm  text-black text-opacity-70 text-center">
+                            System Installer</div>
+                        <div class="px-0.5 rounded-sm bg-[#0066b8] text-white text-opacity-">x64</div>
+                        <div class="px-0.5 rounded-sm bg-[#0066b8] text-white text-opacity-">x86</div>
+                        <div class="px-0.5 rounded-sm bg-[#0066b8] text-white text-opacity-">Arm64</div>
+
+                        <div class="px-0.5 text-sm font-medium rounded-sm  text-black text-opacity-70 text-center">User
+                            .zip</div>
+                        <div class="px-0.5 rounded-sm bg-[#0066b8] text-white text-opacity-">x64</div>
+                        <div class="px-0.5 rounded-sm bg-[#0066b8] text-white text-opacity-">x86</div>
+                        <div class="px-0.5 rounded-sm bg-[#0066b8] text-white text-opacity-">Arm64</div>
+
+                        <div class="px-0.5 text-sm font-medium rounded-sm  text-black text-opacity-70 text-center">CLI</div>
+                        <div class="px-0.5 rounded-sm bg-[#0066b8] text-white text-opacity-">x64</div>
+                        <div class="px-0.5 rounded-sm bg-[#0066b8] text-white text-opacity-">x86</div>
+                        <div class="px-0.5 rounded-sm bg-[#0066b8] text-white text-opacity-">Arm64</div>
+
+
+                    </div>
+                </div>
                 <div></div>
                 <div></div>
             </div>
-            <div></div>
-            <div></div>
-        </div>
-    </section>
+        </section>
 
-</section>
+    </section>
 
 </body>
 
