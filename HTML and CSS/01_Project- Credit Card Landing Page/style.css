@@ -1,7 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --grid-cols-1: repeat(1, minmax(0, 1fr));
+    --main-bg-color: #151515
 }
+
+* {
+    font-family: poppins, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    max-width: 1280px;
+
+}
+
+/* nav */
+.nav {
+    color: rgb(197, 193, 193);
+    padding: 2px 80px;
+    font-size: 14px;
+    /* place-items: center; */
+    align-items: end;
+    height: 70px;
+
+}
+
+/* img logo */
+.nav>div>img {
+    width: 34%;
+}
+
+.nav>.Logo {
+    /* padding: 10px; */
+    padding-left: 0px;
+    align-self: center;
+
+}
+
+nav>:nth-child(1)>ul>li {
+    /* margin-left: 20px; */
+}
+
+.nav-list-1 li {
+    /* margin-left: 40px; */
+    /* padding: 10px; */
+    padding-left: 0px;
+}
+
+.nav-list-1 {
+    padding: 0% 5%;
+    align-items: center;
+}
+
+.nav-list-2 li {
+    margin-left: 55px;
+    /* padding: 10px; */
+    /* padding-left: 0px; */
+}
+
+.nav-list-2 {
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+/* .con-us::before {
+content: url("\Project 1- Credit Card Landing Page/Assets/Icons/btn-pink-bg.svg");
+z-index: -1;
+display: inline;
+position: relative;
+left: 23px;
+
+} */
+/* .btn-pnk {
+    position: relative;
+    position: absolute;
+    top: 3px;
+    right: 137px;
+    z-index: -1;
+} */
+.btn-pnk {
+    /* position: relative; */
+    position: absolute;
+    top: 47px;
+    right: 152px;
+    z-index: -1;
+    width: auto;
+    height: 3%;
+    /* background: linear-gradient(to right, rgb(212, 47, 198), pink); */
+    /* background:  url("./Project 1- Credit Card Landing Page/Icons/btn-pink-bg.svg"); */
+    /* opacity: 70%; */
+}
+
+.nav-list-2>ul :nth-child(1)::after {}
+
+.caret-v {
+    margin-left: 15px;
+
+}
+
+.caret-v::after {
+    /* content: "\f0d7";
+    display: block; */
+}
+
+.caret-v+i::before {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+}
+
 /* flex property */
 .flex {
     display: flex;
@@ -10,6 +119,11 @@
 .justify-center {
     justify-content: center;
 }
+
+.justify-end {
+    justify-content: end;
+}
+
 .item-center {
     align-items: center;
 }
@@ -17,11 +131,21 @@
 .justify-end {
     justify-content: end;
 }
+
 .justify-center {
     justify-content: center;
 }
+
 .justify-between {
     justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
 }
 
 /* Grid */
@@ -31,11 +155,11 @@
 }
 
 .grid-cols-1 {
-    grid-template-columns: repeat(1,minmax(0,1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-3 {
-    grid-template-columns: repeat(3,minmax(0,1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 /* other */
@@ -48,6 +172,6 @@
     margin-left: 3px;
 }
 
-
-
-
+.bg-grey {
+    background: grey;
+}
