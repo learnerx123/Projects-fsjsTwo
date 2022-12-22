@@ -7,35 +7,58 @@
 
 * {
     font-family: poppins, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
     background-color: var(--main-bg-color);
     max-width: 1280px;
+    /* overflow: hidden; */
+    /* margin: 0px; */
+    /* display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: ; */
+    position: relative;
+
 
 }
+section.main-body {
+    overflow: hidden;
+    /* display: flex;
+    flex-flow: column;
+    justify-content: center; */
+    /* align-items: ; */
+}
 
-/* nav */
+/* nav -----------------------------*/
 .nav {
     color: rgb(197, 193, 193);
     padding: 2px 80px;
+    padding-top: 10px;
     font-size: 14px;
     /* place-items: center; */
-    align-items: end;
+    align-items: center;
     height: 70px;
+    /* margin-top: 5px; */
 
 }
 
 /* img logo */
 .nav>div>img {
     width: 34%;
+    /* display: flex;
+    align-items: flex-end; */
+  
 }
 
 .nav>.Logo {
     /* padding: 10px; */
     padding-left: 0px;
-    align-self: center;
-
+    /* align-self: center; */
 }
 
 nav>:nth-child(1)>ul>li {
@@ -62,38 +85,27 @@ nav>:nth-child(1)>ul>li {
 .nav-list-2 {
     justify-content: flex-end;
     align-items: flex-end;
-
 }
 
-/* .con-us::before {
-content: url("\Project 1- Credit Card Landing Page/Assets/Icons/btn-pink-bg.svg");
-z-index: -1;
-display: inline;
-position: relative;
-left: 23px;
-
-} */
-/* .btn-pnk {
+.con-us {
     position: relative;
-    position: absolute;
-    top: 3px;
-    right: 137px;
-    z-index: -1;
-} */
+}
 .btn-pnk {
     /* position: relative; */
     position: absolute;
-    top: 47px;
-    right: 152px;
+    /* top: 34px; */
+    /* right: 10px; */
+    left: -19px;
     z-index: -1;
     width: auto;
-    height: 3%;
+    /* height: 3.5%; */
+    overflow: hidden;
     /* background: linear-gradient(to right, rgb(212, 47, 198), pink); */
     /* background:  url("./Project 1- Credit Card Landing Page/Icons/btn-pink-bg.svg"); */
     /* opacity: 70%; */
 }
 
-.nav-list-2>ul :nth-child(1)::after {}
+
 
 .caret-v {
     margin-left: 15px;
@@ -111,7 +123,164 @@ left: 23px;
     background-color: #fff;
 }
 
-/* flex property */
+
+/* main */
+main {
+    padding: 0px 80px;
+
+}
+
+/* section:1 ------------------------ */
+section.simplify {
+    background-image: ;
+
+}
+.simplify {
+    position: relative;
+}
+.front-card {
+    height: auto;
+    width: 67%;
+    position: absolute;
+    top: 10px;
+    right: -265px;
+    margin-left: ;
+    z-index: 10;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.back-card {
+    /* height: auto;
+    width: 67%;
+    position: absolute;
+    top: 40px;
+    right: -21px;
+    margin-left: ;
+    z-index: -10;
+overflow: hidden; */
+
+height: auto;
+width: 67%;
+position: absolute;
+top: -45px;
+right: -100px;
+/* margin-left: ; */
+/* opacity: 1; */
+overflow: hidden;
+}
+
+.sec1-heading {
+    font-size: 74px;
+    /* width: 1000px; */
+    width: 83%;
+    margin-top: 50px;
+}
+
+.simplify {
+    display: flex;
+    flex-direction: column;
+}
+
+.One-Card {
+    color: #f637ec;
+    font-weight: 600;
+}
+
+.sec1-para {
+    margin-top: 40px;
+    width: 50%;
+    /* padding: 0px 10px; */
+}
+
+.sec1-started {
+    margin-top: 80px;
+    font-size: 23px;
+    margin-left: 30px;
+
+}
+.sec1-started div {
+    position: relative;
+    /* display: inline-block; */
+}
+.sec1-started div img {
+    /* content: url("./Project 1- Credit Card Landing Page/Assets/Icons/btn-pink-bg.svg");; */
+    /* position: relative; */
+    position: absolute;
+    z-index: -1;
+    top: -44px;
+    left: -30px;
+    display: inline-block ;
+    /* background-image: url("./Project 1- Credit Card Landing Page/Assets/Icons/btn-pink-bg.svg");
+    background-repeat: no-repeat; */
+    width: 70px;
+    height: 120px;
+}
+/* .sec1-started::before {
+    position: relative;
+    content: "";
+    background-image: url("./Project 1- Credit Card Landing Page/Assets/Icons/btn-pink-bg.svg");
+    left: 50px;
+    z-index: -1; */
+    /* margin-top: 80px;
+    font-size: 23px; */
+/* } */
+
+
+/* .simplify>.img>.bgi {
+    background-image: url('./Project 1- Credit Card Landing Page/Assets/Photos/backCards.png'); 
+    display: inline-block;
+    width: 50%;
+    height: auto;
+} */
+/* ||||||| */
+.sec1-Happy {
+    margin-top: 80px;
+}
+
+.sec1-Happy ._42k, .sec1-Happy ._12k {
+    font-size: 42px;
+    font-weight: 500;
+}
+
+._12k>span, ._42k>span {
+    color: #f637ec;
+}
+/* ._42k::after {
+    content: "+";
+    margin-left: -12px;
+} */
+
+._12k span {
+    content: "+";
+    margin-left: -12px;
+}
+._42k span {
+    content: "+";
+    margin-left: -12px;
+}
+.sec1-Happy .Happy {
+    /* width: 180px; */
+    /* padding: 0px 10px; */
+    padding-left:15px
+
+}
+.vert-Bar {
+    padding: 0px 40px;
+    /* width: 50px; */
+}
+.vert-Bar {
+    /* height: 30px; */
+    /* color: #fff; */
+}
+.sec1-Happy .years {
+    /* width: 180px; */
+    /* padding: 0px 20px; */
+    padding-left:15px
+
+}
+
+/* flex property --------- */
 .flex {
     display: flex;
 }
