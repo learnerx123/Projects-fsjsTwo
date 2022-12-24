@@ -126,13 +126,15 @@ nav>:nth-child(1)>ul>li {
 
 /* main */
 main {
-    padding: 0px 80px;
+    /* padding: 0px 80px; */
 
 }
 
 /* section:1 ------------------------ */
 section.simplify {
-    background-image: ;
+    /* background-image: ; */
+    padding: 0px 80px;
+
 
 }
 .simplify {
@@ -144,7 +146,7 @@ section.simplify {
     position: absolute;
     top: 10px;
     right: -265px;
-    margin-left: ;
+    /* margin-left: ; */
     z-index: 10;
     opacity: 1;
     overflow: hidden;
@@ -272,6 +274,25 @@ overflow: hidden;
 
 }
 
+/* <!-- section:2 Logo images --> */
+section.sec-2 {
+    padding: 0;
+    margin-top: 160px;
+}
+
+.Logo-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 85px;
+    padding: 80px 0px ;
+    background-color: #292929;
+}
+
+.Logo-5 > img {
+    width: 120px;
+    height: auto;
+}
 /* flex property --------- */
 .flex {
     display: flex;
