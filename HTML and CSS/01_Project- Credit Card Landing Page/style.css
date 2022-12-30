@@ -2,7 +2,9 @@
 
 :root {
     --grid-cols-1: repeat(1, minmax(0, 1fr));
-    --main-bg-color: #151515
+    --main-bg-color: #151515;
+    --colorOrnText: #f637ec;
+
 }
 
 * {
@@ -26,6 +28,7 @@ body {
 
 
 }
+
 section.main-body {
     overflow: hidden;
     /* display: flex;
@@ -52,7 +55,7 @@ section.main-body {
     width: 34%;
     /* display: flex;
     align-items: flex-end; */
-  
+
 }
 
 .nav>.Logo {
@@ -90,6 +93,7 @@ nav>:nth-child(1)>ul>li {
 .con-us {
     position: relative;
 }
+
 .btn-pnk {
     /* position: relative; */
     position: absolute;
@@ -137,9 +141,11 @@ section.simplify {
 
 
 }
+
 .simplify {
     position: relative;
 }
+
 .front-card {
     height: auto;
     width: 67%;
@@ -154,14 +160,14 @@ section.simplify {
 
 .back-card {
 
-height: auto;
-width: 67%;
-position: absolute;
-top: -45px;
-right: -100px;
-/* margin-left: ; */
-/* opacity: 1; */
-overflow: hidden;
+    height: auto;
+    width: 67%;
+    position: absolute;
+    top: -45px;
+    right: -100px;
+    /* margin-left: ; */
+    /* opacity: 1; */
+    overflow: hidden;
 }
 
 .sec1-heading {
@@ -193,10 +199,12 @@ overflow: hidden;
     margin-left: 30px;
 
 }
+
 .sec1-started div {
     position: relative;
     /* display: inline-block; */
 }
+
 .sec1-started div img {
     /* content: url("./Project 1- Credit Card Landing Page/Assets/Icons/btn-pink-bg.svg");; */
     /* position: relative; */
@@ -204,19 +212,20 @@ overflow: hidden;
     z-index: -1;
     top: -44px;
     left: -30px;
-    display: inline-block ;
+    display: inline-block;
     /* background-image: url("./Project 1- Credit Card Landing Page/Assets/Icons/btn-pink-bg.svg");
     background-repeat: no-repeat; */
     width: 70px;
     height: 120px;
 }
+
 /* .sec1-started::before {
     position: relative;
     content: "";
     background-image: url("./Project 1- Credit Card Landing Page/Assets/Icons/btn-pink-bg.svg");
     left: 50px;
     z-index: -1; */
-    /* margin-top: 80px;
+/* margin-top: 80px;
     font-size: 23px; */
 /* } */
 
@@ -232,14 +241,17 @@ overflow: hidden;
     margin-top: 80px;
 }
 
-.sec1-Happy ._42k, .sec1-Happy ._12k {
+.sec1-Happy ._42k,
+.sec1-Happy ._12k {
     font-size: 42px;
     font-weight: 500;
 }
 
-._12k>span, ._42k>span {
+._12k>span,
+._42k>span {
     color: #f637ec;
 }
+
 /* ._42k::after {
     content: "+";
     margin-left: -12px;
@@ -249,32 +261,35 @@ overflow: hidden;
     content: "+";
     margin-left: -12px;
 }
+
 ._42k span {
     content: "+";
     margin-left: -12px;
 }
+
 .sec1-Happy .Happy {
     /* width: 180px; */
     /* padding: 0px 10px; */
-    padding-left:15px
-
+    padding-left: 15px
 }
+
 .vert-Bar {
     padding: 0px 40px;
     /* width: 50px; */
 }
+
 .vert-Bar {
     /* height: 30px; */
     /* color: #fff; */
 }
+
 .sec1-Happy .years {
     /* width: 180px; */
     /* padding: 0px 20px; */
-    padding-left:15px
-
+    padding-left: 15px
 }
 
-/* <!-- section:2 Logo images --> */
+/* <!-- section:2 Logo images--------------------- --> */
 section.sec-2 {
     padding: 0;
     margin-top: 160px;
@@ -285,14 +300,68 @@ section.sec-2 {
     justify-content: center;
     align-items: center;
     gap: 85px;
-    padding: 80px 0px ;
+    padding: 80px 0px;
     background-color: #292929;
 }
 
-.Logo-5 > img {
+.Logo-5>img {
     width: 120px;
     height: auto;
 }
+
+/* <!-- section:3 The best payment------------------------ --> */
+
+.sec3 {
+    padding: 120px 80px;
+}
+.theBest {
+    font-size: 64px;
+    /* padding: 0px 80px; */
+} .theBest > span {
+    color: var(colorOrnText);
+    color: #f637ec;
+    font-weight: 600;
+}
+.theFollowing {
+   color: #a2a1a1;
+   font-size: 17px;
+ }
+
+ .sec3-paras {
+    gap: 0px 20px;
+    /* flex-wrap: wrap; */
+ }
+
+ /* Blocks */
+ .blocks {
+    margin-top: 180px;
+
+ } .block2 {
+    /* margin-bottom: 20px; */
+    position: relative;
+    bottom: 50px;
+    /* #5d5d5d */
+    background: linear-gradient(140deg, #3f3b39, #5d5d5d);
+}
+ .block1, .block2, .block3  {
+    /* padding: 50px 90px; */
+    /* color: ; */
+    gap: 30px 0px;
+    width: 350px;
+    height: 330px;
+    background-color: #262626;
+    flex-direction: column;
+    font-size: 26px;
+    border-left: 2px solid linear-gradient(black,white);
+    border-color: linear-gradient(black,white);
+
+ } .block1 > div, .block2 > div, .block3 > div {
+    /* width: 250px; */
+    text-align: center;
+ } .block1 > img, .block2 > img, .block3 > img {
+    width: 140px;
+    height: auto;
+ }
 /* flex property --------- */
 .flex {
     display: flex;
