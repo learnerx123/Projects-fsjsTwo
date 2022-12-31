@@ -367,8 +367,9 @@ section.sec-2 {
     background-color: #262626;
     flex-direction: column;
     font-size: 26px;
-    border-left: 2px solid linear-gradient(black, white);
-    border-color: linear-gradient(black, white);
+    /* border-style: solid; */
+    border: 1px groove white;
+    /* border-color: white */
 
 }
 
