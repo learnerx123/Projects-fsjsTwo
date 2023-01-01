@@ -25,7 +25,7 @@ body {
     justify-content: center;
     align-items: ; */
     position: relative;
-    max-width: 1280px;
+    /* max-width: 1280px; */
 
 }
 
@@ -386,6 +386,46 @@ section.sec-2 {
     width: 140px;
     height: auto;
 }
+
+/* <!-- section:4 The best payment --------------> */
+.sec4 {
+    gap: 20px 0px;
+    /* height: 50vh; */
+    flex-direction: column;
+    background: #fceffb;
+    color: #292929;
+    padding: 150px 0px;
+} .sec4 > .Unique {
+    font-size: 70px;
+    font-weight: 400;
+    color: #292929;
+    margin-bottom: 18px;
+    margin-top: -15px;
+
+} .sec4 > .Unique > div {
+color: #f637ec;
+text-align: center;
+font-weight: 600;
+}.Weprovide {
+    color: #292929;
+    font-size: 19px;
+    /* padding: 0px 350px; */
+    width: 700px;
+    color: #6f6a6f;
+    /* color: #746e74; */
+    text-align: center;
+}
+
+.vCard {
+    width: 1000px;
+    position: relative;
+    bottom: 60px;
+    /* top: 200px; */
+    /* background: url('/Project 1- Credit Card Landing Page/Assets/Photos/VCards.png'); */
+    z-index: 10;
+}
+
+
 
 /* flex property --------- */
 .flex {
