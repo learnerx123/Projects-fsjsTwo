@@ -338,7 +338,7 @@ section.sec-2 {
     /* margin-left: 40px; */
     /* padding-left: 60px; */
     width: 990px;
-    
+
     /* margin-left: 59px; */
 }
 
@@ -400,18 +400,24 @@ section.sec-2 {
     background: #fceffb;
     color: #292929;
     padding: 150px 0px;
-} .sec4 > .Unique {
+}
+
+.sec4>.Unique {
     font-size: 70px;
     font-weight: 400;
     color: #292929;
     margin-bottom: 18px;
     margin-top: -15px;
 
-} .sec4 > .Unique > div {
-color: #f637ec;
-text-align: center;
-font-weight: 600;
-}.weProvide {
+}
+
+.sec4>.Unique>div {
+    color: #f637ec;
+    text-align: center;
+    font-weight: 600;
+}
+
+.weProvide {
     color: #292929;
     font-size: 19px;
     /* padding: 0px 350px; */
@@ -434,28 +440,44 @@ font-weight: 600;
 .section5 {
     padding: 0px 0px;
 }
+
 .sec5 {
     flex-direction: column;
     gap: 80px 0px;
-} .sec5-B1 {
+}
+
+.sec5-B1 {
     flex-direction: column;
     gap: 50px 0px;
 
-} .B2-b1,.B2-b2,.B2-b3,.B2-b4  {
+}
+
+.B2-b1,
+.B2-b2,
+.B2-b3,
+.B2-b4 {
     gap: 32px 0px;
     flex-direction: column;
     width: 450px;
     /* background-color: #444343; */
-    background-color:#1e1f24;    ;
+    background-color: #1e1f24;
+    ;
     padding: 18px 0px 10px 20px;
     border: 2px groove white;
     color: #9e9e9e;
 
-} .B2-b1:hover,.B2-b2:hover,.B2-b3:hover,.B2-b4:hover {
+}
+
+.B2-b1:hover,
+.B2-b2:hover,
+.B2-b3:hover,
+.B2-b4:hover {
     gap: 25px 0px;
     flex-direction: column;
-    width: 450px;
-    height: 210px;
+    /* width: 450px;
+    height: 210px; */
+    transform: scale(0.95);
+    margin-bottom: 25px;
     background-color: #444343;
     background: linear-gradient(140deg, #3f3b39, #5d5d5d);
     padding: 18px 0px 10px 20px;
@@ -463,30 +485,61 @@ font-weight: 600;
     /* color: #9e9e9e; */
 
 }
+
 .blocksGrid {
     /* display: grid; */
-    grid-template-columns:  repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     /* grid-template-rows: 2; */
+    place-items: center;
     gap: 20px;
     width: 80vw;
     color: #9e9e9e;
-} .blocksGrid * {
+}
+
+.blocksGrid * {
     color: #bdbcbc;
-    
-} 
+
+}
+
 .sec5 .customers {
     font-size: 65px;
     width: 1000px;
     text-align: center;
     margin-top: 100px;
-} .sec5 .customers > span {
+}
+
+.sec5 .customers>span {
     color: #f637ec;
     font-weight: 500;
-} .sec5 .withVarious {
+}
+
+.sec5 .withVarious {
     font-size: 19px;
     width: 550px;
     text-align: center;
     color: #9e9e9e;
+}
+
+/* <!-- <div class="sec5-B3"> --> */
+.sliderButtons .a1 {
+    width: 80px;
+    height: 15px;
+    border-radius: 12px;
+    background-color: #f637ec;
+}
+
+.sliderButtons * {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #3f3e3f;
+}
+
+.sliderButtons {
+    height: 20vh;
+    /* width: 100vw; */
+    gap: 0px 10px;
+    /* margin-right: 52px; */
 }
 
 /* flex property --------- */
