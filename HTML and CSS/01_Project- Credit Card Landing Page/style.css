@@ -316,7 +316,8 @@ section.sec-2 {
 }
 
 .theBest {
-    font-size: 80px;
+    font-size: 67px;
+    /* width: 1800px; */
     /* padding: 0px 80px; */
 }
 
@@ -328,9 +329,11 @@ section.sec-2 {
 
 .theFollowing {
     color: #a2a1a1;
-    font-size: 22px;
-    padding: 0px 20px;
+    font-size: 19px;
+    /* padding: 0px 20px; */
     padding-top: 80px;
+    padding-left: 40px;
+    /* margin-left: 40px; */
     /* padding-left: 60px; */
     width: 990px;
     
@@ -406,7 +409,7 @@ section.sec-2 {
 color: #f637ec;
 text-align: center;
 font-weight: 600;
-}.Weprovide {
+}.weProvide {
     color: #292929;
     font-size: 19px;
     /* padding: 0px 350px; */
