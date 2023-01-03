@@ -456,13 +456,15 @@ section.sec-2 {
 .B2-b2,
 .B2-b3,
 .B2-b4 {
-    gap: 32px 0px;
+    /* gap: 32px 0px; */
+    justify-content: space-between;
     flex-direction: column;
     width: 450px;
+    height: 250px;
     /* background-color: #444343; */
     background-color: #1e1f24;
-    ;
-    padding: 18px 0px 10px 20px;
+    /* flex: 1; */
+    padding: 18px 10px 10px 20px;
     border: 2px groove white;
     color: #9e9e9e;
 
@@ -490,7 +492,8 @@ section.sec-2 {
     /* display: grid; */
     grid-template-columns: repeat(2, 1fr);
     /* grid-template-rows: 2; */
-    place-items: center;
+    /* place-items: center; */
+    place-items: stretch;
     gap: 20px;
     width: 80vw;
     color: #9e9e9e;
