@@ -544,6 +544,66 @@ section.sec-2 {
     gap: 0px 10px;
     /* margin-right: 52px; */
 }
+/* <!-- section:6 Lets start  -----------------> */
+.sec6 {
+    position: relative;
+    height: 0vh; 
+     width: 100vw;
+    height: 500px; 
+     width: 100%;
+
+
+} 
+.sec6>img {
+    position: absolute;
+    height: 80vh;
+    /* width: 100vw; */
+
+}        
+.recDark, .recLight {
+    width: 100vw;
+    /* top */
+}
+.diamandR{
+    left: 0px;
+    top: -15px;
+    
+}.diamandL{
+    right: 0px;
+    top: 30px;
+    
+}
+.letsCont {
+    position: absolute;
+    z-index: 1;
+    /* top: 200px; */
+    /* left: 490px; */
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.letsCont > .Lets {
+    font-size: 70px;
+    padding: 0px 100px;
+    /* padding-top: 25px; */
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 500;
+}
+.letsCont > .Lets > span {
+    color: #151515;
+    font-weight: 600;
+
+
+}
+.letsCont .sec1-started {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.space1 {
+    height: 100vh;
+    /* position: absolute; */
+}
 
 /* flex property --------- */
 .flex {
