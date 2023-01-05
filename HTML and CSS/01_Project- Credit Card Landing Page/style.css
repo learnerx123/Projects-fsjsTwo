@@ -336,7 +336,9 @@ section.sec-2 {
 
 }
 
-.block2 {
+.block1:hover,
+.block2:hover,
+.block3:hover  {
     /* margin-bottom: 20px; */
     position: relative;
     bottom: 50px;
@@ -359,6 +361,14 @@ section.sec-2 {
     border: 1px groove white;
     /* border-color: white */
 
+}
+
+.block2 {
+    /* margin-bottom: 20px; */
+    position: relative;
+    bottom: 50px;
+    /* #5d5d5d */
+    background: linear-gradient(140deg, #3f3b39, #5d5d5d);
 }
 
 .block1>div,
