@@ -221,24 +221,7 @@ section.simplify {
     height: 120px;
 }
 
-/* .sec1-started::before {
-    position: relative;
-    content: "";
-    background-image: url("./Project 1- Credit Card Landing Page/Assets/Icons/btn-pink-bg.svg");
-    left: 50px;
-    z-index: -1; */
-/* margin-top: 80px;
-    font-size: 23px; */
-/* } */
 
-
-/* .simplify>.img>.bgi {
-    background-image: url('./Project 1- Credit Card Landing Page/Assets/Photos/backCards.png'); 
-    display: inline-block;
-    width: 50%;
-    height: auto;
-} */
-/* ||||||| */
 .sec1-Happy {
     margin-top: 80px;
 }
